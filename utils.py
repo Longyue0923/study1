@@ -92,6 +92,7 @@ def sortClusters(cluster):
     return np.concatenate([cluster, ratio[:, None]], axis=1)
 
 
+# 加载数据，返回的数据为gt的宽高
 def load_dataset(path, normalized=True):
     """
         加载 xml 文件
